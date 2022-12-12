@@ -1,0 +1,24 @@
+#Задание 17
+
+
+class Worker():
+    def __init__(self, name, surname, rate = 0, days = 0):
+        self.name = name
+        self.surname = surname
+        self.rate = rate
+        self.days = days
+
+    def print_into(self):
+        print(self.name, self.surname, self.rate, self.days)
+    def __str__(self):
+        return "({0},{1})".format(self.rate, self.days)
+
+    def __mul__(self, other):
+        rate = self.rate * other.self
+        days = self.days * other.days
+        return Worker(rate, days)
+
+p1 = Worker(40, 20)
+p2 = Worker(30, 15)
+
+print(p1 * p2)
