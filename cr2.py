@@ -11,7 +11,7 @@ s = 'самое длинное слово'.split()
 n = list(map(lambda e: len(e),s))
 for i in range(len(n)):
     if len(s[i]) == max(n):
-        print('самое длинное')
+        print('самое длинное:', s[i])
     
     
     
